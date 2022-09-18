@@ -20,6 +20,9 @@ basic.forever(function () {
     } else if (input.temperature() < 28) {
         basic.setLedColor(0x00ffff)
         basic.showString("< 28")
+    } else if (input.temperature() < 17) {
+        basic.setLedColor(0x000000)
+        basic.showString("< 17")
     } else {
         basic.setLedColor(0xff0000)
         basic.showString("> 28")
